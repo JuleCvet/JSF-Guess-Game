@@ -42,7 +42,7 @@ public class GuessNumberBean implements Serializable {
             return "resources/img/right.gif";
         }
             else if (userguess < RANDOMNUMBER){
-                    return "resources/img/wrong.gif";
+                    return "resources/img/wrong1.gif";
            }
             else 
                 return "resources/img/giphy.gif";
