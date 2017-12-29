@@ -4,15 +4,19 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
         <title>Guess Game</title>
-          <h:outputStylesheet library="css" name="myStyle.css"/>
+        <h:outputStylesheet library="css" name="myStyle.css"/>
     </h:head>
     <h:body>
         <h:form>
             <h:graphicImage value="#{guessNumberBean.image}"/>
             <h3> 
-                <h:outputText value="#{guessNumberBean.response}"/>
-                <h:commandButton value="Back!"  action="index"/>
+                <h:outputText value="#{guessNumberBean.response}"/><br></br>
             </h3>
+            <h:commandButton id="guessButton" styleClass="guessButton" value="Guess again" action="#{guessNumberBean.back()}"/> 
+            
+            <h:commandButton id="resetButton" styleClass="resetButton" value="New Game"  action="#{guessNumberBean.reset()}"/>
+
+
         </h:form>
     </h:body>
 </html>

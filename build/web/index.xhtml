@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Guess Game</title>
         <h:outputStylesheet library="css" name="myStyle.css"/>
@@ -13,10 +14,10 @@
                 I am thinking of a number between #{guessNumberBean.min}
                 and #{guessNumberBean.max}<br></br>
                 Can you guess what is?<br/>
-                
-             <h:inputText value="#{guessNumberBean.userguess}"/>  
+                  <h:inputText value="#{guessNumberBean.userguess}"/> 
             </h3>
-            <h:commandButton value="Guess" action="response"/>
+            
+            <h:commandButton id="resetButton" styleClass="resetButton" value="Guess"  action="response"/>
         </h:form>
     </h:body>
 </html>

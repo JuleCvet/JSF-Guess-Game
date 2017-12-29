@@ -11,3 +11,32 @@ font-size: 14px;
 h3{
     font-size: xx-large;
 }
+
+.guessButton{
+    text-align: center;
+    color: #000033;
+    background: #ffffcc;
+    width: 175px;
+    height: 50px;
+    font-size: 25px;
+}
+
+
+.backButton{
+    text-align: center;
+    color: #1a0000;
+    background: #ff3333;
+    width: 100px;
+    height: 50px;
+    font-size: 25px; 
+}
+
+.resetButton{
+    text-align: center;
+    color: #000033;
+    background: #ffffcc;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+

@@ -10,7 +10,7 @@ import java.util.Random;
 @SessionScoped
 public class GuessNumberBean implements Serializable {
     
-        private final int RANDOMNUMBER;
+        private int RANDOMNUMBER = 0;
         private int max = 10;
         private int min = 1;
         private int userguess;
@@ -47,6 +47,21 @@ public class GuessNumberBean implements Serializable {
             else 
                 return "resources/img/giphy.gif";
         }
+    
+    public String reset(){
+    userguess = 0;
+    Random random = new Random();
+    RANDOMNUMBER = random.nextInt(max)+1;
+    return "index";
+    
+    }
+    
+    public String back(){
+    userguess = 0;
+    Random random = new Random();
+    return "index";
+    
+    }
 
     public int getMax() {
         return max;
